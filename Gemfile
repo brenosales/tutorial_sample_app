@@ -3,6 +3,8 @@ ruby "2.0.0"
 
 gem "rails", "4.0.0.rc1"
 gem "bootstrap-sass", "2.3.1.0"
+gem "bcrypt-ruby", "3.0.1"
+
 
 group :development, :test do
   gem "sqlite3", "1.3.7"
@@ -17,7 +19,10 @@ group :test do
   gem "selenium-webdriver", "2.0.0"
   gem "capybara", "2.1.0"
   gem "rb-inotify", "0.9.0"
-  gem "libnotify", "0.8.0"
+  gem "factory_girl_rails", "4.2.1"
+  #gem "libnotify", "0.8.0"
+  #gem "libnotify" if /linux/ =~ RUBY_PLATFORM
+  #gem "growl" if /darwin/ =~ RUBY_PLATFORM
 end
 
 gem "sass-rails", "4.0.0.rc1"
